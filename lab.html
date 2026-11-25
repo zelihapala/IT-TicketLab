@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- App title goes here. -->
+		<div class="header">
+			<h1>Zeliha's TicketLab</h1>
+		</div>
+
+		<!-- This div holds all the main content. -->
+		<div class="main-container">
+			<!-- This div holds the two top panels. -->
+			<div class="top-section">
+				<!-- Users can choose a ticket here. -->
+				<div class="left-panel">
+					<h2>Choose a Ticket</h2>
+
+					<!-- Users can select a ticket from the list. -->
+					<select id="ticket-select">
+						<option value="">Select a ticket</option>
+						<option value="account">Locked out of account</option>
+						<option value="printer">Printer not working</option>
+						<option value="wifi">Wi-Fi connection issue</option>
+						<option value="vpn">VPN connection issue</option>
+					</select>
+
+					<!-- Shows the selected ticket details. -->
+					<div class="ticket-details">
+						<h3 id="ticket-title">Locked out of account</h3>
+
+						<span id="ticket-priority">Medium Priority</span>
+
+						<p id="customer-name">Raised by Hannah, Sales Assistant</p>
+
+						<ul id="ticket-description">
+							<li>Hannah cannot sign in to her work laptop.</li>
+							<li>She says her account is locked.</li>
+							<li>She has a client call at 11am.</li>
+						</ul>
+					</div>
+
+					<!-- Shows the remaining time and questions. -->
+					<div class="call-info">
+						<div class="timer-box">
+							<h3 id="timer">08:00</h3>
+							<p>Time Left</p>
+						</div>
+
+						<div class="questions-box">
+							<h3 id="questions-left">7</h3>
+							<p>Questions Left</p>
+						</div>
+					</div>
+
+					<!-- Users can start and end the call here. -->
+					<div class="call-buttons">
+						<button id="start-call">Start Call</button>
+						<button id="end-call">I'm Done</button>
+					</div>
+				</div>
+
+				<!-- The customer chat goes here. -->
+				<div class="right-panel">
+					<h2>Customer Chat</h2>
+				</div>
+			</div>
+
+			<!-- Users can review the call and write a ticket here. -->
+			<div class="bottom-panel">
+				<h2>Review & Ticket</h2>
+			</div>
+		</div>
+
+		<!-- Link to the JavaScript file. -->
+		<script src="ticketlab.js"></script>
+	</body>
+</html>

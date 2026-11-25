@@ -1,0 +1,178 @@
+/* Includes padding and borders in the element size. */
+* {
+	box-sizing: border-box;
+}
+
+/* Sets the page background and font. */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f5f7;
+	color: #222;
+}
+
+/* Styles the app header. */
+.header {
+	background-color: #172644;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 24px;
+}
+
+/* Adds space around the main content. */
+.main-container {
+	padding: 20px;
+}
+
+/* Places the two top panels side by side. */
+.top-section {
+	display: flex;
+	gap: 20px;
+}
+
+/* Styles the left panel. */
+.left-panel {
+	width: 35%;
+	min-height: 400px;
+	background-color: #fffbfc;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/* Styles the right panel. */
+.right-panel {
+	flex: 1;
+	min-height: 400px;
+	background-color: #fffbfc;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/* Styles the bottom panel. */
+.bottom-panel {
+	margin-top: 20px;
+	min-height: 250px;
+	background-color: #fffbfc;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+/* Sets the panel heading sizes. */
+h2 {
+	margin-top: 0;
+	font-size: 18px;
+}
+
+/* Styles the ticket dropdown menu. */
+#ticket-select {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Adds space above the ticket details. */
+.ticket-details {
+	margin-top: 20px;
+}
+
+/* Styles the ticket title. */
+#ticket-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/* Highlights the ticket priority. */
+#ticket-priority {
+	background-color: #ffe3a3;
+	color: #805500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+/* Styles the customer information. */
+#customer-name {
+	font-size: 13px;
+	color: #666;
+}
+
+/* Styles the problem description. */
+#ticket-description {
+	font-size: 14px;
+	padding-left: 20px;
+	line-height: 1.8;
+}
+
+/* Places the timer and question boxes side by side. */
+.call-info {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+/* Styles the two information boxes. */
+.timer-box,
+.questions-box {
+	flex: 1;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 15px;
+	text-align: center;
+}
+
+/* Styles the numbers inside the boxes. */
+.call-info h3 {
+	font-size: 26px;
+	color: #172644;
+	margin: 0;
+}
+
+/* Styles the text below the numbers. */
+.call-info p {
+	font-size: 12px;
+	color: #666;
+	margin: 5px 0 0;
+}
+
+/* Places the call buttons side by side. */
+.call-buttons {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+/* Sets the button size and shape. */
+.call-buttons button {
+	flex: 1;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+/* Styles the start button. */
+#start-call {
+	background-color: #172644;
+	color: white;
+	border: none;
+}
+
+/* Styles the end button. */
+#end-call {
+	background-color: white;
+	color: #172644;
+	border: 1px solid #172644;
+}
