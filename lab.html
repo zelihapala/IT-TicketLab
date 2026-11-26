@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Zeliha's TicketLab</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -67,12 +67,49 @@
 				<!-- The customer chat goes here. -->
 				<div class="right-panel">
 					<h2>Customer Chat</h2>
+					<!-- Shows the conversation with the customer. -->
+					<div class="chat-area" id="chat-area">
+						<p class="customer-message">
+							Hiya, thanks for picking up. I can't get into my laptop and I've
+							got a client call soon.
+						</p>
+					</div>
+					<!-- Users can type and send a message here. -->
+					<div class="chat-input">
+						<input
+							type="text"
+							id="message-input"
+							placeholder="Type your question to the customer..."
+						/>
+
+						<button id="send-button">Send</button>
+					</div>
 				</div>
 			</div>
 
 			<!-- Users can review the call and write a ticket here. -->
 			<div class="bottom-panel">
 				<h2>Review & Ticket</h2>
+				<!-- This section is for recording the ticket details. -->
+				<div class="internal-note">
+					<h3>Internal Note</h3>
+
+					<!-- A short description of the issue. -->
+					<label for="summary">Summary</label>
+					<textarea id="summary"></textarea>
+
+					<!-- Steps taken to investigate the issue. -->
+					<label for="troubleshooting">Troubleshooting Steps</label>
+					<textarea id="troubleshooting"></textarea>
+
+					<!-- The main cause of the issue. -->
+					<label for="root-cause">Root Cause</label>
+					<textarea id="root-cause"></textarea>
+
+					<!-- How the issue was resolved. -->
+					<label for="resolution">Resolution</label>
+					<textarea id="resolution"></textarea>
+				</div>
 			</div>
 		</div>
 

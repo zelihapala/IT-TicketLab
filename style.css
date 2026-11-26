@@ -25,7 +25,10 @@ body {
 }
 
 /* Adds space around the main content. */
+/* Keeps the main content centred on the page. */
 .main-container {
+	max-width: 850px;
+	margin: 0 auto;
 	padding: 20px;
 }
 
@@ -53,6 +56,7 @@ body {
 	border: 1px solid #ddd;
 	border-radius: 10px;
 	padding: 20px;
+	min-width: 0;
 }
 
 /* Styles the bottom panel. */
@@ -175,4 +179,106 @@ h2 {
 	background-color: white;
 	color: #172644;
 	border: 1px solid #172644;
+}
+/* Creates a scrollable area for chat messages. */
+.chat-area {
+	height: 300px;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 15px;
+	overflow-y: auto;
+}
+
+/* Styles the customer's message. */
+.customer-message {
+	background-color: #0d9488;
+	color: white;
+	padding: 12px;
+	border-radius: 8px;
+	max-width: 80%;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+/* Places the input and send button side by side. */
+.chat-input {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+/* Styles the message input. */
+#message-input {
+	flex: 1;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	min-width: 0;
+}
+
+/* Styles the send button. */
+#send-button {
+	background-color: #172644;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+/* Adds space above the internal note section. */
+.internal-note {
+	margin-top: 20px;
+}
+
+/* Styles the internal note heading. */
+.internal-note h3 {
+	font-size: 16px;
+	color: #172644;
+}
+
+/* Places each label above its text area. */
+.internal-note label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+/* Styles the areas used to write ticket notes. */
+.internal-note textarea {
+	width: 100%;
+	min-height: 70px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	background-color: white;
+	resize: vertical;
+}
+/* Styles the messages sent by the support agent. */
+.agent-message {
+	background-color: #172644;
+	color: white;
+	padding: 12px;
+	border-radius: 8px;
+	max-width: 80%;
+	margin-left: auto;
+	font-size: 14px;
+}
+
+/* Styles the call status messages. */
+.system-message {
+	color: #777;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* Shows when a button cannot be used. */
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
 }
